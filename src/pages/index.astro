@@ -9,10 +9,20 @@
     <meta name="generator" content={Astro.generator} />
 
     <title>Interactive Card Details Form</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+
+    <style>
+      @font-face {
+        font-family: "Space Grotesk";
+        font-style: normal;
+        font-weight: 500;
+        src: local(""), url("/fonts/space-grotesk-v15-latin-500.woff2") format("woff2"),
+          url("/fonts/space-grotesk-v15-latin-500.woff") format("woff");
+      }
+    </style>
   </head>
 
-  <body>
+  <body class="font-space-grotesk">
     <h1>Interactive Card Details Form</h1>
   </body>
 </html>
