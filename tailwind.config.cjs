@@ -14,9 +14,11 @@ module.exports = {
     },
 
     colors: {
+      black: 'hsl(0, 0%, 18%)',
       white: 'hsl(0, 0%, 100%)',
       error: 'hsl(0, 100%, 66%)',
       violet: 'hsl(278, 94%, 30%)',
+      'gray': 'hsl(210, 12%, 71%)',
       'very-dark-violet': 'hsl(278, 68%, 11%)',
       'very-light-violet': 'hsl(249, 99%, 64%)',
       'dark-grayish-violet': 'hsl(279, 6%, 55%)',
