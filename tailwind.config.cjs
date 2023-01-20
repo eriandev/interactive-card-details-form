@@ -2,6 +2,13 @@
 module.exports = {
   content: ['./src/**/*.{astro,html,js}'],
   theme: {
+    screens: {
+      sm: '576px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+    },
+
     fontFamily: {
       'space-grotesk': ['Space Grotesk', 'Arial', 'Noto Sans', 'sans-serif'],
     },
