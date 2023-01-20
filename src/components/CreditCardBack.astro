@@ -1,12 +1,23 @@
-<article
-  class="grid h-40 w-[286px] grid-rows-[repeat(3,fit-content(100%))] gap-4 rounded-lg pt-4 text-white shadow-2xl [background:linear-gradient(145deg,rgba(255,255,255,1)_0%,rgba(222,221,223,1)_100%)] sm:h-60 sm:w-[448px] sm:gap-6 sm:pt-6"
->
-  <div class="h-9 w-full bg-black sm:h-[54px]"></div>
+---
+interface Props {
+  class?: string;
+}
 
-  <div class="px-[26px] sm:px-10">
+const { class: customCssClasses } = Astro.props;
+---
+
+<article
+  class:list={[
+    "grid h-40 w-[286px] grid-rows-[repeat(3,fit-content(100%))] gap-4 rounded-lg pt-4 text-white shadow-2xl [background:linear-gradient(145deg,rgba(255,255,255,1)_0%,rgba(222,221,223,1)_100%)] lg:h-60 lg:w-[448px] lg:gap-6 lg:pt-6",
+    customCssClasses,
+  ]}
+>
+  <div class="h-9 w-full bg-black lg:h-[54px]"></div>
+
+  <div class="px-[26px] lg:px-10">
     <div
       id="cvc"
-      class="rounded-md bg-gradient-to-r from-gray via-[hsl(212,15%,80%)] to-gray py-[10px] px-[14px] text-right text-[10px] font-thin tracking-widest sm:py-[14px] sm:px-5 sm:text-xs"
+      class="rounded-md bg-gradient-to-r from-gray via-[hsl(212,15%,80%)] to-gray py-[10px] px-[14px] text-right text-[10px] font-thin tracking-widest lg:py-[14px] lg:px-5 lg:text-xs"
     >
       000
     </div>

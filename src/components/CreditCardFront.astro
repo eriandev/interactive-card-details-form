@@ -1,10 +1,21 @@
+---
+interface Props {
+  class?: string;
+}
+
+const { class: customCssClasses } = Astro.props;
+---
+
 <article
-  class="grid h-40 w-[286px] grid-rows-[fit-content(100%)] content-between rounded-lg bg-[url(images/bg-card-front.png)] bg-center py-[18px] px-5 text-white shadow-2xl sm:h-60 sm:w-[448px] sm:py-[30px] sm:px-8"
+  class:list={[
+    "grid h-40 w-[286px] grid-rows-[fit-content(100%)] content-between rounded-lg bg-[url(images/bg-card-front.png)] bg-center py-[18px] px-5 text-white shadow-2xl lg:h-60 lg:w-[448px] lg:py-[30px] lg:px-8",
+    customCssClasses,
+  ]}
 >
-  <img alt="Card logo" src="icons/card-logo.svg" class="h-8 w-14 sm:h-12 sm:w-[88px]" />
-  <div class="grid grid-rows-[fit-content(100%)] gap-4 tracking-widest sm:gap-6">
-    <span id="card-number" class="block w-full text-center text-lg font-medium sm:text-3xl">0000 0000 0000 0000</span>
-    <div class="flex justify-between text-[10px] font-thin sm:text-xs">
+  <img alt="Card logo" src="icons/card-logo.svg" class="h-8 w-14 lg:h-12 lg:w-[88px]" />
+  <div class="grid grid-rows-[fit-content(100%)] gap-4 tracking-widest lg:gap-6">
+    <span id="card-number" class="block w-full text-center text-lg font-medium lg:text-3xl">0000 0000 0000 0000</span>
+    <div class="flex justify-between text-[10px] font-thin lg:text-xs">
       <span id="cardholder-name" class="uppercase">Jane Appleseed</span>
       <div>
         <span id="exp-mm-date">00</span>/<span id="exp-yy-date">00</span>

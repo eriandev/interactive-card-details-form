@@ -1,6 +1,5 @@
 ---
-import CreditCardBack from "../components/CreditCardBack.astro";
-import CreditCardFront from "../components/CreditCardFront.astro";
+import CardSection from "../components/CardSection.astro";
 ---
 
 <html lang="en">
@@ -38,11 +37,9 @@ import CreditCardFront from "../components/CreditCardFront.astro";
     </style>
   </head>
 
-  <body class="font-space-grotesk">
-    <section class="px-4 py-8">
-      <CreditCardFront />
-      <br /><br />
-      <CreditCardBack />
-    </section>
+  <body class="min-h-screen font-space-grotesk">
+    <main class="grid grid-rows-[15rem_auto] lg:min-h-screen lg:grid-cols-[30rem_auto] lg:grid-rows-none">
+      <CardSection />
+    </main>
   </body>
 </html>
