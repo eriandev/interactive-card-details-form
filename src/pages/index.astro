@@ -1,4 +1,5 @@
 ---
+import CreditCardFront from "../components/CreditCardFront.astro";
 ---
 
 <html lang="en">
@@ -15,6 +16,20 @@
       @font-face {
         font-family: "Space Grotesk";
         font-style: normal;
+        font-weight: 300;
+        src: local(""), url("/fonts/space-grotesk-v15-latin-300.woff2") format("woff2"),
+          url("/fonts/space-grotesk-v15-latin-300.woff") format("woff");
+      }
+      @font-face {
+        font-family: "Space Grotesk";
+        font-style: normal;
+        font-weight: 400;
+        src: local(""), url("/fonts/space-grotesk-v15-latin-regular.woff2") format("woff2"),
+          url("/fonts/space-grotesk-v15-latin-regular.woff") format("woff");
+      }
+      @font-face {
+        font-family: "Space Grotesk";
+        font-style: normal;
         font-weight: 500;
         src: local(""), url("/fonts/space-grotesk-v15-latin-500.woff2") format("woff2"),
           url("/fonts/space-grotesk-v15-latin-500.woff") format("woff");
@@ -23,6 +38,8 @@
   </head>
 
   <body class="font-space-grotesk">
-    <h1>Interactive Card Details Form</h1>
+    <section class="px-4 py-8">
+      <CreditCardFront />
+    </section>
   </body>
 </html>
