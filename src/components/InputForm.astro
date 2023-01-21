@@ -1,0 +1,19 @@
+---
+import type { HTMLAttributes } from "astro/types";
+import Label from "./Label.astro";
+
+interface Props extends HTMLAttributes<"input"> {
+  label?: string;
+}
+
+const { id, label, class: customCssClasses, ...attrs } = Astro.props;
+---
+
+<div class={customCssClasses}>
+  {label ? <Label for={id}>{label}</Label> : null}
+  <input
+    id={id}
+    {...attrs}
+    class="w-full cursor-pointer rounded-md border border-light-grayish-violet py-2 px-3 font-medium outline-none placeholder:text-light-grayish-violet focus:border-violet"
+  />
+</div>
