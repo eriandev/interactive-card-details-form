@@ -1,0 +1,20 @@
+---
+import Label from "./Label.astro";
+import InputForm from "./InputForm.astro";
+---
+
+<form class="flex flex-col gap-6">
+  <InputForm id="input-name" label="Cardholder Name" maxlength="20" placeholder="e.g. Jane Appleseed" />
+  <InputForm id="input-num" label="Card Number" maxlength="16" placeholder="e.g. 1234 5678 9123 0000" />
+  <div class="grid grid-cols-[152px_auto] gap-3">
+    <div>
+      <Label for="input-mm">Exp. Date (mm/yy)</Label>
+      <div class="grid grid-cols-2 gap-2">
+        <InputForm id="input-mm" maxlength="2" placeholder="MM" />
+        <InputForm id="input-yy" maxlength="2" placeholder="YY" />
+      </div>
+    </div>
+
+    <InputForm id="input-cvc" label="CVC" maxlength="3" placeholder="e.g. 123" />
+  </div>
+</form>
