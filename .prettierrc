@@ -1,5 +1,4 @@
 {
   "printWidth": 120,
-  "astroAllowShorthand": true,
   "plugins": ["prettier-plugin-astro", "prettier-plugin-tailwindcss"]
 }
