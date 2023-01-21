@@ -39,6 +39,9 @@ import CardSection from "../components/CardSection.astro";
           url("/interactive-card-details-form/fonts/space-grotesk-v15-latin-500.woff") format("woff");
       }
     </style>
+
+    <script src="../scripts/declareRefs.js"></script>
+    <script src="../scripts/updateCards.js"></script>
   </head>
 
   <body class="min-h-screen font-space-grotesk">
@@ -46,9 +49,9 @@ import CardSection from "../components/CardSection.astro";
       <CardSection />
 
       <section class="mx-auto flex max-w-xl flex-col gap-7 self-center px-4 pt-28 lg:gap-10 lg:pt-0 xl:pl-48">
-        <div class="flex flex-col gap-6">
-          <InputForm id="input-name" label="Cardholder Name" placeholder="e.g. Jane Appleseed" />
-          <InputForm id="input-num" label="Card Number" placeholder="e.g. 1234 5678 9123 0000" />
+        <form class="flex flex-col gap-6">
+          <InputForm id="input-name" label="Cardholder Name" maxlength="20" placeholder="e.g. Jane Appleseed" />
+          <InputForm id="input-num" label="Card Number" maxlength="16" placeholder="e.g. 1234 5678 9123 0000" />
           <div class="grid grid-cols-[152px_auto] gap-3">
             <div>
               <Label for="input-mm">Exp. Date (mm/yy)</Label>
@@ -58,9 +61,9 @@ import CardSection from "../components/CardSection.astro";
               </div>
             </div>
 
-            <InputForm id="input-cvc" label="CVC" placeholder="e.g. 123" />
+            <InputForm id="input-cvc" label="CVC" maxlength="3" placeholder="e.g. 123" />
           </div>
-        </div>
+        </form>
 
         <Button id="btn-action">Confirm</Button>
       </section>
