@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="astro-47RJTPSY">
+<html lang="en" class="astro-7LV2DDNH">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -7,14 +7,14 @@
     <meta name="generator" content="Astro v1.9.2">
 
     <title>Interactive Card Details Form</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="/interactive-card-details-form/favicon.png">
 
     
-  <link rel="stylesheet" href="/interactive-card-details-form/assets/index.d5b1b0bf.css" /></head>
+  <link rel="stylesheet" href="/interactive-card-details-form/assets/index.8cb24cdc.css" /></head>
 
-  <body class="min-h-screen font-space-grotesk astro-47RJTPSY">
-    <main class="grid grid-rows-[15rem_auto] lg:min-h-screen lg:grid-cols-[30rem_auto] lg:grid-rows-none astro-47RJTPSY">
-      <section class="w-full bg-[url(images/bg-main-mobile.png)] bg-cover bg-center px-4 py-8 lg:flex">
+  <body class="min-h-screen font-space-grotesk astro-7LV2DDNH">
+    <main class="grid grid-rows-[15rem_auto] lg:min-h-screen lg:grid-cols-[30rem_auto] lg:grid-rows-none astro-7LV2DDNH">
+      <section class="w-full bg-[url(/interactive-card-details-form/images/bg-main-mobile.png)] bg-cover bg-center px-4 py-8 lg:flex">
   <div class="mx-auto grid w-full max-w-md justify-items-end lg:flex lg:flex-col-reverse lg:gap-9 lg:self-center">
     <article class="grid h-40 w-[286px] grid-rows-[repeat(3,fit-content(100%))] gap-4 rounded-lg pt-4 text-white shadow-2xl [background:linear-gradient(145deg,rgba(255,255,255,1)_0%,rgba(222,221,223,1)_100%)] lg:h-60 lg:w-[448px] lg:gap-6 lg:pt-6 xl:ml-[45%]">
   <div class="h-9 w-full bg-black lg:h-[54px]"></div>
@@ -25,7 +25,7 @@
     </div>
   </div>
 </article>
-    <article class="grid h-40 w-[286px] grid-rows-[fit-content(100%)] content-between rounded-lg bg-[url(images/bg-card-front.png)] bg-center py-[18px] px-5 text-white shadow-2xl lg:h-60 lg:w-[448px] lg:py-[30px] lg:px-8 justify-self-start -mt-16 lg:mt-0 lg:justify-self-auto xl:ml-[25%]">
+    <article class="grid h-40 w-[286px] grid-rows-[fit-content(100%)] content-between rounded-lg bg-[url(/interactive-card-details-form/images/bg-card-front.png)] bg-center py-[18px] px-5 text-white shadow-2xl lg:h-60 lg:w-[448px] lg:py-[30px] lg:px-8 justify-self-start -mt-16 lg:mt-0 lg:justify-self-auto xl:ml-[25%]">
   <img alt="Card logo" src="icons/card-logo.svg" class="h-8 w-14 lg:h-12 lg:w-[88px]">
   <div class="grid grid-rows-[fit-content(100%)] gap-4 tracking-widest lg:gap-6">
     <span id="card-number" class="block w-full text-center text-lg font-medium lg:text-3xl">0000 0000 0000 0000</span>
@@ -39,5 +39,44 @@
 </article>
   </div>
 </section>
+
+      <section class="mx-auto flex max-w-xl flex-col gap-6 self-center px-4 pt-28 lg:pt-0 xl:pl-48 astro-7LV2DDNH">
+        <div class="astro-7LV2DDNH">
+  <label for="input-name" class="block pb-[14px] text-sm font-medium uppercase leading-none tracking-widest text-very-dark-violet">
+  Cardholder Name
+</label>
+  <input id="input-name" placeholder="e.g. Jane Appleseed" class="w-full cursor-pointer rounded-md border border-light-grayish-violet py-2 px-3 font-medium outline-none placeholder:text-light-grayish-violet focus:border-violet">
+</div>
+        <div class="astro-7LV2DDNH">
+  <label for="input-num" class="block pb-[14px] text-sm font-medium uppercase leading-none tracking-widest text-very-dark-violet">
+  Card Number
+</label>
+  <input id="input-num" placeholder="e.g. 1234 5678 9123 0000" class="w-full cursor-pointer rounded-md border border-light-grayish-violet py-2 px-3 font-medium outline-none placeholder:text-light-grayish-violet focus:border-violet">
+</div>
+        <div class="grid grid-cols-[152px_auto] gap-3 astro-7LV2DDNH">
+          <div class="astro-7LV2DDNH">
+            <label for="input-mm" class="block pb-[14px] text-sm font-medium uppercase leading-none tracking-widest text-very-dark-violet">
+  Exp. Date (mm/yy)
+</label>
+            <div class="grid grid-cols-2 gap-2 astro-7LV2DDNH">
+              <div class="astro-7LV2DDNH">
+  
+  <input id="input-mm" maxlength="2" placeholder="MM" class="w-full cursor-pointer rounded-md border border-light-grayish-violet py-2 px-3 font-medium outline-none placeholder:text-light-grayish-violet focus:border-violet">
+</div>
+              <div class="astro-7LV2DDNH">
+  
+  <input id="input-yy" maxlength="2" placeholder="YY" class="w-full cursor-pointer rounded-md border border-light-grayish-violet py-2 px-3 font-medium outline-none placeholder:text-light-grayish-violet focus:border-violet">
+</div>
+            </div>
+          </div>
+
+          <div class="astro-7LV2DDNH">
+  <label for="input-cvc" class="block pb-[14px] text-sm font-medium uppercase leading-none tracking-widest text-very-dark-violet">
+  CVC
+</label>
+  <input id="input-cvc" placeholder="e.g. 123" class="w-full cursor-pointer rounded-md border border-light-grayish-violet py-2 px-3 font-medium outline-none placeholder:text-light-grayish-violet focus:border-violet">
+</div>
+        </div>
+      </section>
     </main>
   </body></html>
