@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="astro-DL7XKDL7">
+<html lang="en" class="astro-GEDSY7LD">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -14,11 +14,12 @@
     
     
     
-  <link rel="stylesheet" href="/interactive-card-details-form/assets/index.4fd98f80.css" /><script type="module">function c(n,{target:e}){return e.value.length<n}function i({key:n}){return/^[0-9]$/.test(n)}window.isMaxLength=c;window.isOnlyNumbers=i;const t=n=>document.querySelector(n),o=t("#card-number"),r=t("#cardholder-name"),s=t("#exp-mm-date"),d=t("#exp-yy-date"),p=t("#cvc"),l=t("#input-name"),v=t("#input-num"),m=t("#input-mm"),x=t("#input-yy"),C=t("#input-cvc");t("#btn-action");v.addEventListener("input",({target:n})=>{o.textContent=y(n.value)});l.addEventListener("input",({target:n})=>{r.textContent=n.value?n.value:"Jane Appleseed"});m.addEventListener("input",({target:n})=>{s.textContent=n.value?n.value:"00"});x.addEventListener("input",({target:n})=>{d.textContent=n.value?n.value:"00"});C.addEventListener("input",({target:n})=>{p.textContent=n.value?n.value:"000"});function y(n){return n?n.replace(/[^0-9]/g,"").substr(0,16).split("").reduce((e,a,u)=>e+(!u||u%4?"":" ")+a,""):"0000 0000 0000 0000"}
+    
+  <link rel="stylesheet" href="/interactive-card-details-form/assets/index.4c84e4f8.css" /><script type="module">const n=t=>document.querySelector(t),o=t=>document.querySelectorAll(t),d=n("#card-number"),p=n("#cardholder-name"),m=n("#exp-mm-date"),v=n("#exp-yy-date"),f=n("#cvc"),C=n("form"),a=n("#input-name"),s=n("#input-num"),b=n("#input-mm"),h=n("#input-yy"),l=n("#input-cvc"),x=n("#btn-action"),N=n("#complete-view");function L(){return[y(a,a.id),g(s,s.id),M(h,"input-mm-yy"),V(b,"input-mm-yy"),w(l,l.id)].every(Boolean)}function y(t,e){return t.value?!0:i(t,e,"Can't be blank")}function E(t,e){return y(t,e)?isNaN(parseInt(t.value))?i(t,e,"Wrong format, numbers only"):!0:!1}function g(t,e){return E(t,e)?t.value.length!==16?i(t,e,"Wrong format, need valid credit card number"):!0:!1}function V(t,e){return isNaN(parseInt(t.value))||parseInt(t.value)>12?i(t,e,"Need valid month"):!0}function M(t,e){return isNaN(parseInt(t.value))||parseInt(t.value)>60?i(t,e,"Need valid year"):!0}function w(t,e){return E(t,e)?t.value.length>3?i(t,e,"Wrong format, need valid CVC"):!0:!1}function i(t,e,r){const u=n(`#error-${e}`);return t.classList.replace("border-light-grayish-violet","border-error"),u.textContent=r,!1}function F(){d.textContent="0000 0000 0000 0000",p.textContent="Jane Appleseed",m.textContent="00",v.textContent="00",f.textContent="000"}s?.addEventListener("input",({target:t})=>{d.textContent=I(t.value)});a?.addEventListener("input",({target:t})=>{p.textContent=t.value?t.value:"Jane Appleseed"});b?.addEventListener("input",({target:t})=>{m.textContent=t.value?t.value:"00"});h?.addEventListener("input",({target:t})=>{v.textContent=t.value?t.value:"00"});l?.addEventListener("input",({target:t})=>{f.textContent=t.value?t.value:"000"});function I(t){return t?t.replace(/[^0-9]/g,"").substr(0,16).split("").reduce((e,r,u)=>e+(!u||u%4?"":" ")+r,""):"0000 0000 0000 0000"}let c=!1;x.addEventListener("click",()=>{if(A(),!c&&L()){$();return}Y()});function Y(){W(),F(),c=!1,x.textContent="Confirm",C.classList.replace("hidden","flex"),N.classList.replace("grid","hidden")}function $(){c=!0,C.classList.replace("flex","hidden"),N.classList.replace("hidden","grid")}function A(){const t=o("[id^=input-]"),e=o("[id^=error-input]");t.forEach(r=>{r.classList.replace("border-error","border-light-grayish-violet")}),e.forEach(r=>{r.textContent=""})}function W(){o("[id^=input-]").forEach(e=>{e.value=""})}function k(t,{target:e}){return e.value.length<t}function q({key:t}){return/^[0-9]$/.test(t)}window.isMaxLength=k;window.isOnlyNumbers=q;
 </script></head>
 
-  <body class="min-h-screen font-space-grotesk astro-DL7XKDL7">
-    <main class="grid grid-rows-[15rem_auto] pb-11 lg:min-h-screen lg:grid-cols-[30rem_auto] lg:grid-rows-none lg:pb-0 astro-DL7XKDL7">
+  <body class="min-h-screen font-space-grotesk astro-GEDSY7LD">
+    <main class="grid grid-rows-[15rem_auto] pb-11 lg:min-h-screen lg:grid-cols-[30rem_auto] lg:grid-rows-none lg:pb-0 astro-GEDSY7LD">
       <section class="w-full bg-[url(/interactive-card-details-form/images/bg-main-mobile.png)] bg-cover bg-center px-4 py-8 lg:flex">
   <div class="mx-auto grid w-full max-w-md justify-items-end lg:flex lg:flex-col-reverse lg:gap-9 lg:self-center">
     <article class="grid h-40 w-[286px] grid-rows-[repeat(3,fit-content(100%))] gap-4 rounded-lg pt-4 text-white shadow-2xl [background:linear-gradient(145deg,rgba(255,255,255,1)_0%,rgba(222,221,223,1)_100%)] lg:h-60 lg:w-[448px] lg:gap-6 lg:pt-6 xl:ml-[45%]">
@@ -45,19 +46,21 @@
   </div>
 </section>
 
-      <section class="mx-auto flex max-w-xl flex-col gap-7 self-center px-4 pt-28 lg:gap-10 lg:pt-0 xl:pl-48 astro-DL7XKDL7">
+      <section class="mx-auto flex max-w-xl flex-col gap-7 self-center px-4 pt-28 lg:gap-10 lg:pt-0 xl:pl-48 astro-GEDSY7LD">
         <form class="flex flex-col gap-6">
   <div>
   <label for="input-name" class="block pb-[14px] text-sm font-medium uppercase leading-none tracking-widest text-very-dark-violet">
   Cardholder Name
 </label>
-  <input id="input-name" maxlength="20" autocomplete="off" placeholder="e.g. Jane Appleseed" onkeypress="return isMaxLength(20,event)" class="w-full cursor-pointer rounded-md border border-light-grayish-violet py-2 px-3 font-medium outline-none placeholder:text-light-grayish-violet focus:border-violet">
+  <input id="input-name" class="w-full cursor-pointer rounded-md border border-light-grayish-violet py-2 px-3 font-medium outline-none placeholder:text-light-grayish-violet focus:border-violet" name="name" maxlength="20" autocomplete="off" placeholder="e.g. Jane Appleseed" onkeypress="return isMaxLength(20,event)" required>
+  <span id="error-input-name" class="block w-max pt-2 text-xs font-medium text-error"></span>
 </div>
   <div>
   <label for="input-num" class="block pb-[14px] text-sm font-medium uppercase leading-none tracking-widest text-very-dark-violet">
   Card Number
 </label>
-  <input id="input-num" maxlength="16" autocomplete="off" placeholder="e.g. 1234 5678 9123 0000" onkeypress="return isOnlyNumbers(event) &#38;&#38; isMaxLength(16,event)" class="w-full cursor-pointer rounded-md border border-light-grayish-violet py-2 px-3 font-medium outline-none placeholder:text-light-grayish-violet focus:border-violet">
+  <input id="input-num" class="w-full cursor-pointer rounded-md border border-light-grayish-violet py-2 px-3 font-medium outline-none placeholder:text-light-grayish-violet focus:border-violet" name="num" maxlength="16" autocomplete="off" placeholder="e.g. 1234 5678 9123 0000" onkeypress="return isOnlyNumbers(event) &#38;&#38; isMaxLength(16,event)" required>
+  <span id="error-input-num" class="block w-max pt-2 text-xs font-medium text-error"></span>
 </div>
   <div class="grid grid-cols-[152px_auto] gap-3">
     <div>
@@ -67,23 +70,32 @@
       <div class="grid grid-cols-2 gap-2">
         <div>
   
-  <input id="input-mm" maxlength="2" placeholder="MM" autocomplete="off" onkeypress="return isOnlyNumbers(event) &#38;&#38; isMaxLength(2,event)" class="w-full cursor-pointer rounded-md border border-light-grayish-violet py-2 px-3 font-medium outline-none placeholder:text-light-grayish-violet focus:border-violet">
+  <input id="input-mm" class="w-full cursor-pointer rounded-md border border-light-grayish-violet py-2 px-3 font-medium outline-none placeholder:text-light-grayish-violet focus:border-violet" name="mm" maxlength="2" placeholder="MM" autocomplete="off" onkeypress="return isOnlyNumbers(event) &#38;&#38; isMaxLength(2,event)" required>
+  
 </div>
         <div>
   
-  <input id="input-yy" maxlength="2" placeholder="YY" autocomplete="off" onkeypress="return isOnlyNumbers(event) &#38;&#38; isMaxLength(2,event)" class="w-full cursor-pointer rounded-md border border-light-grayish-violet py-2 px-3 font-medium outline-none placeholder:text-light-grayish-violet focus:border-violet">
+  <input id="input-yy" class="w-full cursor-pointer rounded-md border border-light-grayish-violet py-2 px-3 font-medium outline-none placeholder:text-light-grayish-violet focus:border-violet" name="yy" maxlength="2" placeholder="YY" autocomplete="off" onkeypress="return isOnlyNumbers(event) &#38;&#38; isMaxLength(2,event)" required>
+  
 </div>
       </div>
+      <span id="error-input-mm-yy" class="block w-max pt-2 text-xs font-medium text-error"></span>
     </div>
 
     <div>
   <label for="input-cvc" class="block pb-[14px] text-sm font-medium uppercase leading-none tracking-widest text-very-dark-violet">
   CVC
 </label>
-  <input id="input-cvc" maxlength="3" autocomplete="off" placeholder="e.g. 123" onkeypress="return isOnlyNumbers(event) &#38;&#38; isMaxLength(3,event)" class="w-full cursor-pointer rounded-md border border-light-grayish-violet py-2 px-3 font-medium outline-none placeholder:text-light-grayish-violet focus:border-violet">
+  <input id="input-cvc" class="w-full cursor-pointer rounded-md border border-light-grayish-violet py-2 px-3 font-medium outline-none placeholder:text-light-grayish-violet focus:border-violet" name="cvc" maxlength="3" autocomplete="off" placeholder="e.g. 123" onkeypress="return isOnlyNumbers(event) &#38;&#38; isMaxLength(3,event)" required>
+  <span id="error-input-cvc" class="block w-max pt-2 text-xs font-medium text-error"></span>
 </div>
   </div>
 </form>
+        <div id="complete-view" class="hidden w-[368px] grid-flow-row auto-rows-max content-center justify-items-center gap-4 font-medium md:h-[282px]">
+  <img alt="Complete" src="/interactive-card-details-form/icons/icon-complete.svg">
+  <h1 class="text-2xl uppercase tracking-[0.2em]">Thank You!</h1>
+  <p class="text-dark-grayish-violet">We've added your card details</p>
+</div>
         <button id="btn-action" class="w-full rounded-lg bg-very-dark-violet py-4 font-medium tracking-wide text-white transition-[transform] duration-200 ease-in-out active:scale-95">
   Confirm
 </button>
