@@ -1,8 +1,14 @@
 /**
  * @param {string} selector
- * @return {HTMLElement}
+ * @return {HTMLElement | null}
  */
 export const $ = (selector) => document.querySelector(selector);
+
+/**
+ * @param {string} selector
+ * @return {NodeListOf<Element>}
+ */
+export const $$ = (selector) => document.querySelectorAll(selector);
 
 /** @type {HTMLSpanElement} */
 export const cardNumber = $("#card-number");
