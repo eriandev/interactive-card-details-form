@@ -11,19 +11,27 @@ import {
   inputYY,
 } from "./declareRefs";
 
-inputNum.addEventListener("input", ({ target }) => {
+export function resetCards() {
+  cardNumber.textContent = "0000 0000 0000 0000";
+  cardHolder.textContent = "Jane Appleseed";
+  cardExpMM.textContent = "00";
+  cardExYY.textContent = "00";
+  cardCVC.textContent = "000";
+}
+
+inputNum?.addEventListener("input", ({ target }) => {
   cardNumber.textContent = getFormatted(target.value);
 });
-inputName.addEventListener("input", ({ target }) => {
+inputName?.addEventListener("input", ({ target }) => {
   cardHolder.textContent = target.value ? target.value : "Jane Appleseed";
 });
-inputMM.addEventListener("input", ({ target }) => {
+inputMM?.addEventListener("input", ({ target }) => {
   cardExpMM.textContent = target.value ? target.value : "00";
 });
-inputYY.addEventListener("input", ({ target }) => {
+inputYY?.addEventListener("input", ({ target }) => {
   cardExYY.textContent = target.value ? target.value : "00";
 });
-inputCVC.addEventListener("input", ({ target }) => {
+inputCVC?.addEventListener("input", ({ target }) => {
   cardCVC.textContent = target.value ? target.value : "000";
 });
 

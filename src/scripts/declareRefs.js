@@ -25,6 +25,9 @@ export const cardExYY = $("#exp-yy-date");
 /** @type {HTMLDivElement} */
 export const cardCVC = $("#cvc");
 
+/** @type {HTMLFormElement} */
+export const mainForm = $("form");
+
 /** @type {HTMLInputElement} */
 export const inputName = $("#input-name");
 
@@ -42,3 +45,6 @@ export const inputCVC = $("#input-cvc");
 
 /** @type {HTMLButtonElement} */
 export const btn = $("#btn-action");
+
+/** @type {HTMLDivElement} */
+export const completeView = $("#complete-view");
