@@ -6,9 +6,26 @@ interface Props {
 const { class: customCssClasses } = Astro.props;
 ---
 
+<script>
+  import { cardCVC } from "../scripts/declareRefs.js";
+
+  cardCVC.addEventListener("click", () => {
+    if (cardCVC.type === "password") {
+      cardCVC.setAttribute("type", "text");
+      cardCVC.classList.add("text-[10px]", "lg:text-xs");
+      cardCVC.classList.remove("text-xs", "lg:text-sm");
+      return;
+    }
+
+    cardCVC.setAttribute("type", "password");
+    cardCVC.classList.add("text-xs", "lg:text-sm");
+    cardCVC.classList.remove("text-[10px]", "lg:text-xs");
+  });
+</script>
+
 <article
   class:list={[
-    "grid h-40 w-[286px] grid-rows-[repeat(3,fit-content(100%))] gap-4 rounded-lg pt-4 text-white shadow-2xl [background:linear-gradient(145deg,rgba(255,255,255,1)_0%,rgba(222,221,223,1)_100%)] lg:h-60 lg:w-[448px] lg:gap-6 lg:pt-6",
+    "grid h-40 w-[286px] z-10 grid-rows-[repeat(3,fit-content(100%))] gap-4 rounded-lg pt-4 text-white shadow-2xl [background:linear-gradient(145deg,rgba(255,255,255,1)_0%,rgba(222,221,223,1)_100%)] lg:h-60 lg:w-[448px] lg:gap-6 lg:pt-6",
     customCssClasses,
   ]}
 >
@@ -16,10 +33,15 @@ const { class: customCssClasses } = Astro.props;
 
   <div class="px-[26px] lg:px-10">
     <div
-      id="cvc"
-      class="rounded-md bg-gradient-to-r from-gray via-[hsl(212,15%,80%)] to-gray py-[10px] px-[14px] text-right text-[10px] font-thin tracking-widest lg:py-[14px] lg:px-5 lg:text-xs"
+      class="block rounded-md bg-gradient-to-r from-gray via-[hsl(212,15%,80%)] to-gray py-[10px] px-[14px] text-right lg:py-[14px] lg:px-5"
     >
-      000
+      <input
+        id="cvc"
+        value="000"
+        type="password"
+        class="w-[28px] cursor-pointer bg-transparent text-right text-xs font-thin tracking-widest outline-none lg:text-sm"
+        readonly
+      />
     </div>
   </div>
 </article>

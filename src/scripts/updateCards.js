@@ -16,7 +16,7 @@ export function resetCards() {
   cardHolder.textContent = "Jane Appleseed";
   cardExpMM.textContent = "00";
   cardExYY.textContent = "00";
-  cardCVC.textContent = "000";
+  cardCVC.value = "000";
 }
 
 inputNum?.addEventListener("input", ({ target }) => {
@@ -32,7 +32,7 @@ inputYY?.addEventListener("input", ({ target }) => {
   cardExYY.textContent = target.value ? target.value : "00";
 });
 inputCVC?.addEventListener("input", ({ target }) => {
-  cardCVC.textContent = target.value ? target.value : "000";
+  cardCVC.value = target.value ? target.value : "000";
 });
 
 function getFormatted(text) {

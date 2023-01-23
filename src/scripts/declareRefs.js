@@ -22,7 +22,7 @@ export const cardExpMM = $("#exp-mm-date");
 /** @type {HTMLSpanElement} */
 export const cardExYY = $("#exp-yy-date");
 
-/** @type {HTMLDivElement} */
+/** @type {HTMLInputElement} */
 export const cardCVC = $("#cvc");
 
 /** @type {HTMLFormElement} */
