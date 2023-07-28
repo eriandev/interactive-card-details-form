@@ -6,4 +6,7 @@ export default defineConfig({
   site: 'https://eriandev.github.io',
   base: '/interactive-card-details-form',
   integrations: [tailwind()],
+  build: {
+    assets: 'assets'
+  }
 });
