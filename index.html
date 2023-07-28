@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="astro-ODAFKKSA">
+<html lang="en" class="astro-J7PV25F6">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="theme-color" content="#600594">
 
-    <meta name="generator" content="Astro v1.9.2">
+    <meta name="generator" content="Astro v2.9.4">
 
     <title>Interactive Card Details Form</title>
     <meta name="description" content="Challenge #7 by frontendmentor.io">
@@ -35,11 +35,11 @@
     
     
     
-  <link rel="stylesheet" href="/interactive-card-details-form/assets/index.6581db1d.css" /><script type="module">const n=t=>document.querySelector(t),o=t=>document.querySelectorAll(t),p=n("#card-number"),m=n("#cardholder-name"),v=n("#exp-mm-date"),f=n("#exp-yy-date"),r=n("#cvc"),x=n("form"),l=n("#input-name"),c=n("#input-num"),C=n("#input-mm"),b=n("#input-yy"),d=n("#input-cvc"),y=n("#btn-action"),h=n("#complete-view");function g(){return[L(l,l.id),E(c,c.id),w(b,"input-mm-yy"),V(C,"input-mm-yy"),M(d,d.id)].every(Boolean)}function L(t,e){return t.value?!0:s(t,e,"Can't be blank")}function N(t,e){return L(t,e)?isNaN(parseInt(t.value))?s(t,e,"Wrong format, numbers only"):!0:!1}function E(t,e){return N(t,e)?t.value.length!==16?s(t,e,"Wrong format, need valid credit card number"):!0:!1}function V(t,e){return isNaN(parseInt(t.value))||parseInt(t.value)>12?s(t,e,"Need valid month"):!0}function w(t,e){return isNaN(parseInt(t.value))||parseInt(t.value)>60?s(t,e,"Need valid year"):!0}function M(t,e){return N(t,e)?t.value.length>3?s(t,e,"Wrong format, need valid CVC"):!0:!1}function s(t,e,i){const a=n(`#error-${e}`);return t.classList.replace("border-light-grayish-violet","border-error"),a.textContent=i,!1}function F(){p.textContent="0000 0000 0000 0000",m.textContent="Jane Appleseed",v.textContent="00",f.textContent="00",r.value="000"}c?.addEventListener("input",({target:t})=>{p.textContent=A(t.value)});l?.addEventListener("input",({target:t})=>{m.textContent=t.value?t.value:"Jane Appleseed"});C?.addEventListener("input",({target:t})=>{v.textContent=t.value?t.value:"00"});b?.addEventListener("input",({target:t})=>{f.textContent=t.value?t.value:"00"});d?.addEventListener("input",({target:t})=>{r.value=t.value?t.value:"000"});function A(t){return t?t.replace(/[^0-9]/g,"").substr(0,16).split("").reduce((e,i,a)=>e+(!a||a%4?"":" ")+i,""):"0000 0000 0000 0000"}let u=!1;y.addEventListener("click",()=>{if($(),!u&&g()){Y();return}u&&I()});function I(){k(),F(),u=!1,y.textContent="Confirm",x.classList.replace("hidden","flex"),h.classList.replace("grid","hidden")}function Y(){u=!0,x.classList.replace("flex","hidden"),h.classList.replace("hidden","grid")}function $(){const t=o("[id^=input-]"),e=o("[id^=error-input]");t.forEach(i=>{i.classList.replace("border-error","border-light-grayish-violet")}),e.forEach(i=>{i.textContent=""})}function k(){o("[id^=input-]").forEach(e=>{e.value=""})}function W(t,{target:e}){return e.value.length<t}function q({key:t}){return/^[0-9]$/.test(t)}window.isMaxLength=W;window.isOnlyNumbers=q;r.addEventListener("click",()=>{if(r.type==="password"){r.setAttribute("type","text"),r.classList.add("text-[10px]","lg:text-xs"),r.classList.remove("text-xs","lg:text-sm");return}r.setAttribute("type","password"),r.classList.add("text-xs","lg:text-sm"),r.classList.remove("text-[10px]","lg:text-xs")});
+  <link rel="stylesheet" href="/interactive-card-details-form/_astro/index.01caa740.css" /><script type="module">const n=t=>document.querySelector(t),o=t=>document.querySelectorAll(t),p=n("#card-number"),m=n("#cardholder-name"),v=n("#exp-mm-date"),f=n("#exp-yy-date"),r=n("#cvc"),x=n("form"),l=n("#input-name"),c=n("#input-num"),C=n("#input-mm"),b=n("#input-yy"),d=n("#input-cvc"),y=n("#btn-action"),h=n("#complete-view");function g(){return[L(l,l.id),E(c,c.id),w(b,"input-mm-yy"),V(C,"input-mm-yy"),M(d,d.id)].every(Boolean)}function L(t,e){return t.value?!0:s(t,e,"Can't be blank")}function N(t,e){return L(t,e)?isNaN(parseInt(t.value))?s(t,e,"Wrong format, numbers only"):!0:!1}function E(t,e){return N(t,e)?t.value.length!==16?s(t,e,"Wrong format, need valid credit card number"):!0:!1}function V(t,e){return isNaN(parseInt(t.value))||parseInt(t.value)>12?s(t,e,"Need valid month"):!0}function w(t,e){return isNaN(parseInt(t.value))||parseInt(t.value)>60?s(t,e,"Need valid year"):!0}function M(t,e){return N(t,e)?t.value.length>3?s(t,e,"Wrong format, need valid CVC"):!0:!1}function s(t,e,i){const a=n(`#error-${e}`);return t.classList.replace("border-light-grayish-violet","border-error"),a.textContent=i,!1}function F(){p.textContent="0000 0000 0000 0000",m.textContent="Jane Appleseed",v.textContent="00",f.textContent="00",r.value="000"}c?.addEventListener("input",({target:t})=>{p.textContent=A(t.value)});l?.addEventListener("input",({target:t})=>{m.textContent=t.value?t.value:"Jane Appleseed"});C?.addEventListener("input",({target:t})=>{v.textContent=t.value?t.value:"00"});b?.addEventListener("input",({target:t})=>{f.textContent=t.value?t.value:"00"});d?.addEventListener("input",({target:t})=>{r.value=t.value?t.value:"000"});function A(t){return t?t.replace(/[^0-9]/g,"").substr(0,16).split("").reduce((e,i,a)=>e+(!a||a%4?"":" ")+i,""):"0000 0000 0000 0000"}let u=!1;y.addEventListener("click",()=>{if($(),!u&&g()){Y();return}u&&I()});function I(){k(),F(),u=!1,y.textContent="Confirm",x.classList.replace("hidden","flex"),h.classList.replace("grid","hidden")}function Y(){u=!0,x.classList.replace("flex","hidden"),h.classList.replace("hidden","grid")}function $(){const t=o("[id^=input-]"),e=o("[id^=error-input]");t.forEach(i=>{i.classList.replace("border-error","border-light-grayish-violet")}),e.forEach(i=>{i.textContent=""})}function k(){o("[id^=input-]").forEach(e=>{e.value=""})}function W(t,{target:e}){return e.value.length<t}function q({key:t}){return/^[0-9]$/.test(t)}window.isMaxLength=W;window.isOnlyNumbers=q;r.addEventListener("click",()=>{if(r.type==="password"){r.setAttribute("type","text"),r.classList.add("text-[10px]","lg:text-xs"),r.classList.remove("text-xs","lg:text-sm");return}r.setAttribute("type","password"),r.classList.add("text-xs","lg:text-sm"),r.classList.remove("text-[10px]","lg:text-xs")});
 </script></head>
 
-  <body class="min-h-screen font-space-grotesk astro-ODAFKKSA">
-    <main class="grid grid-rows-[15rem_auto] pb-11 lg:min-h-screen lg:grid-cols-[30rem_auto] lg:grid-rows-none lg:pb-0 astro-ODAFKKSA">
+  <body class="min-h-screen font-space-grotesk astro-J7PV25F6">
+    <main class="grid grid-rows-[15rem_auto] pb-11 lg:min-h-screen lg:grid-cols-[30rem_auto] lg:grid-rows-none lg:pb-0 astro-J7PV25F6">
       <section class="w-full bg-[url(/interactive-card-details-form/images/bg-main-mobile.png)] bg-cover bg-center px-4 py-8 lg:flex">
   <div class="mx-auto grid w-full max-w-md justify-items-end lg:flex lg:flex-col-reverse lg:gap-9 lg:self-center">
     
@@ -68,7 +68,7 @@
   </div>
 </section>
 
-      <section class="mx-auto flex max-w-xl flex-col gap-7 self-center px-4 pt-28 lg:gap-10 lg:pt-0 xl:pl-48 2xl:pl-0 astro-ODAFKKSA">
+      <section class="mx-auto flex max-w-xl flex-col gap-7 self-center px-4 pt-28 lg:gap-10 lg:pt-0 xl:pl-48 2xl:pl-0 astro-J7PV25F6">
         <form class="flex flex-col gap-6">
   <div>
   <label for="input-name" class="block pb-[14px] text-sm font-medium uppercase leading-none tracking-widest text-very-dark-violet">
